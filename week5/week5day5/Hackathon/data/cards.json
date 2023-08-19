@@ -1,0 +1,101 @@
+[
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/Cyril%20Ramaphosa%201.png",
+        "name": "cyrilRamaphosa"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/Dina%20Boluarte%201.png",
+        "name": "dinaBoluarte"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/Donald%20Trump%201.png",
+        "name": "donaldTrump"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/Droupadi%20Murmu%201.png",
+        "name": "droupadiMurmu"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/Ebrahim%20Raisi%201.png",
+        "name": "ebrahimRaisi"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/Emmanuel%20Macron%201%20.png",
+        "name": "emmanuelMacron"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/Ilham%20Aliyev%201.png",
+        "name": "ilhamAliyev"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/MBS.png",
+        "name": "mbS"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/Mohamed%20Bazoum%201.png",
+        "name": "mohamedBazoum"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/Salome%20Zourabichvili%201.png",
+        "name": "salomeZourabichvili"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/Tsai%20Ing-Wen%201.png",
+        "name": "tsaiIngwen"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/Volodymyr%20Zelenskyy%201%20.png",
+        "name": "volodymyrZelenskyy"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/flags/americanFlag.png",
+        "name": "donaldTrump"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/flags/azerbijaniFlag.png",
+        "name": "ilhamAliyev"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/flags/frenchFlag.png",
+        "name": "emmanuelMacron"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/flags/georgiaFlag.png",
+        "name": "salomeZourabichvili"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/flags/indianFlag.png",
+        "name": "droupadiMurmu"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/flags/iranFlag.png",
+        "name": "ebrahimRaisi"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/flags/nigerFlag.png",
+        "name": "mohamedBazoum"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/flags/peruFlag.png",
+        "name": "dinaBoluarte"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/flags/saudiFlag.png",
+        "name": "mbS"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/flags/southafricanFlag.png",
+        "name": "cyrilRamaphosa"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/flags/taiwanFlag.png",
+        "name": "tsaiIngwen"
+    },
+    {
+        "image": "file:///Users/ydney/Desktop/DI-BOOTCAMP/week5/week5day5/Hackathon/assets/flags/ukraineFlag.png",
+        "name": "volodymyrZelenskyy"
+    }
+
+
+
+]
