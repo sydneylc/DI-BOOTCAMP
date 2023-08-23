@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHOCOLATE FLAVORED FACTS</title>
+    <style>
+         h2 {
+            cursor: pointer; 
+        }
+        body {
+                padding-top:30px;
+            } 
+
+            label,input {
+                display:block;
+            }  
+            #targetElement {
+            background-color: blue;
+            }
+    </style>
+</head>
+<body>
+    <article>
+    <h1> Some Facts </h1>
+    <h2> The Chocolate </h2>
+    <h3> History of the chocolate </h3>
+    <p> Chocolate is made from tropical Theobroma cacao tree seeds. 
+    Its earliest use dates back to the Olmec civilization in Mesoamerica.</p>
+    <p> After the European discovery of the Americas, chocolate became 
+    very popular in the wider world, and its demand exploded. </p>
+    <p> Chocolate has since become a popular food product that millions enjoy every day, 
+    thanks to its unique, rich, and sweet taste.</p> 
+    <p> But what effect does eating chocolate have on our health?</p> 
+</article>
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="firstname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lastname"><br><br>
+  <input type="submit" value="Submit" id="submit">
+</form> 
+<ul class="usersAnswer"></ul>
+
+<p><strong>Hello</strong> I hope you are enjoying <strong>this</strong> class. At the
+<strong>end</strong> you <strong>will</strong> be great Developers!
+<strong>Enjoy</strong> the <strong>JavaScript </strong> lessons</p>
+
+<p>Input radius value and get the volume of a sphere.</p> 
+<form  id="MyForm"> 
+    <label for="radius">Radius</label><input type="text" name="radius" id="radius" required> 
+    <label for="volume">Volume</label><input type="text" name="volume" id="volume"> 
+    <input type="submit" value="Calculate" id="submit">    
+</form> 
+
+<script src="dommanip.js"></script>
+</body>
+</html>
+
+    <script>
+        // EXERCISE 1
+ 
+        var h1part = document.querySelector("h1");
+        console.log(h1part.textContent);
+
+       
+        var article = document.querySelector("article");
+        var paragraphs = article.querySelectorAll("p");
+        article.removeChild(paragraphs[paragraphs.length - 1]);
+
+              var h2part = document.querySelector("h2");
+        h2Element.addEventListener("click", function () {
+            h2part.style.backgroundColor = "red";
+        });
+
+    
+        var h3part = document.querySelector("h3");
+        h3part.addEventListener("click", function () {
+            h3part.style.display = "none";
+        });
+
+
+        var boldButton = document.getElementById("boldButton");
+        var allParagraphs = document.querySelectorAll("p");
+        boldButton.addEventListener("click", function () {
+            for (var i = 0; i < allParagraphs.length; i++) {
+                allParagraphs[i].style.fontWeight = "bold";
+            }
+        });
+    </script>
+<script>
+    // EXERCISE 2
+    var userForm = document.getElementById("userForm");
+        console.log(userForm);
+
+      
+        var fnameInput = document.getElementById("fname");
+        var lnameInput = document.getElementById("lname");
+        console.log(fnameInput, lnameInput);
+
+      
+        var firstnameInput = document.getElementsByName("firstname")[0];
+        var lastnameInput = document.getElementsByName("lastname")[0];
+        console.log(firstnameInput, lastnameInput);
+
+
+        userForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            var usersAnswerList = document.querySelector(".usersAnswer");
+
+
+            var firstName = firstnameInput.value;
+            var lastName = lastnameInput.value;
+
+       
+            if (firstName.trim() !== "" && lastName.trim() !== "") {
+        
+                var firstNameLi = document.createElement("li");
+                firstNameLi.textContent = firstName;
+
+                var lastNameLi = document.createElement("li");
+                lastNameLi.textContent = lastName;
+
+                usersAnswerList.appendChild(firstNameLi);
+                usersAnswerList.appendChild(lastNameLi);
+
+
+                firstnameInput.value = "";
+                lastnameInput.value = "";
+            }
+        });
+    </script>
+
+<script>
+// EXERCISE 4
+var form = document.getElementById("MyForm");
+var radiusInput = document.getElementById("radius");
+var volumeInput = document.getElementById("volume");
+
+form.addEventListener("submit", function (event){
+    event.preventDefault();
+    var radius = parseFloat(radiusInput.value);
+    var volume = (4/3) * Math.PI * Math.pow(radius, 3);
+    
+    volumeInput.value = volume.toFixed(2);
+})
+
+
+</script>
+<script>
+    var targetElement = document.getElementById("targetElement");
+    targetElement.addEventListener("dblclick", function ()
+    {
+        this.style.color = "purple";
+    })
+    </script>

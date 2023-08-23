@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        p {
+          background: yellow;
+          color: red;
+        }
+        #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: yellow;
+    }
+    #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+    }
+    #target {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        background: yellow;
+    }
+    #box {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+    }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+        <button id="clear">Clear Interval</button>
+        <p><button onclick="myMove()">Click Me</button></p>
+        <div id="container">
+            <div id="animate"></div>
+        </div>
+    
+        <script src= "movebox.js"></script>
+        <script>
+             function myMove() {
+        var elem = document.getElementById("animate");
+        var pos = 0;
+        var id = setInterval(frame, 1);
+        function frame() {
+            if (pos == 350) {
+                clearInterval(id);
+            } else {
+                pos++;
+                elem.style.left = pos + "px";
+            }
+        }
+    }
+//             //PART 1 SOMETHING IS WRONG W THE 2000, COMMA WAS WRONG
+//             setTimeout(function() ) {
+//                 alert("Hello World");
+
+//             } 2000;
+// // PART 2
+//             interval = setInterval(function() {
+//         if (paragraphCount < 5) {
+//             var newParagraph = document.createElement("p");
+//             newParagraph.textContent = "Hello World";
+//             container.appendChild(newParagraph);
+//             paragraphCount++;
+//         } else {
+//             clearInterval(interval);
+//         }
+//     }, 2000);
+// // PART 3
+//     clearButton.addEventListener("click", function() {
+//         clearInterval(interval);
+//     });
+
+        </script>
+         <div id="target"></div>
+         <br>
+         <div id="box"></div>
+     
+         <script>
+         var box = document.getElementById("box");
+         var target = document.getElementById("target");
+         var isDragging = false;
+     
+         box.addEventListener("mousedown", function(e) {
+             isDragging = true;
+         });
+     
+         document.addEventListener("mousemove", function(e) {
+             if (isDragging) {
+                 box.style.left = e.clientX + "px";
+                 box.style.top = e.clientY + "px";
+             }
+         });
+     
+         document.addEventListener("mouseup", function() {
+             isDragging = false;
+         });
+         </script>
+    </body>
+    </html>
+    

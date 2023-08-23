@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANIPULATING DOM</title>
+    <style>
+         body {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">Users:</div>
+<ul class="list">
+    <li>John</li>
+    <li>Pete</li>
+</ul>
+<ul class="list">
+    <li>David</li>
+    <li>Sarah</li>
+    <li>Dan</li>
+</ul>
+<div id>Users:</div>
+<ul>
+    <li>John</li>
+    <li>Pete</li>
+</ul>
+<div id="navBar">
+    <ul>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My Friends</a></li>
+        <li><a href="#">Messenger</a></li>
+        <li><a href="#">My Pics</a></li>
+    </ul>
+</div>
+<div class="listBooks"></div>
+<script src="week4day5exercise.js"></script>
+
+
+<!-- // EXERCISE 1 -->
+
+<script>
+    
+    var containerDiv = document.getElementById("container");
+    console.log(containerDiv);
+  
+    var peteLi = document.querySelector(".list:nth-child(1) li:nth-child(2)");
+    peteLi.textContent = "Richard";
+
+
+    var sarahLi = document.querySelector(".list:nth-child(2) li:nth-child(2)");
+    sarahLi.parentNode.removeChild(sarahLi);
+
+  
+    var ulElements = document.querySelectorAll(".list");
+    for (var i = 0; i < ulElements.length; i++) {
+        var firstLi = ulElements[i].querySelector("li:first-child");
+        firstLi.textContent = "Sydney";
+    }
+
+    // EXERCISE 2 its asking for a parent element, I do not understand why the JSX syntax is off. Tried toggeling. 
+
+
+
+var divElement = document.querySelector("div");
+        divElement.style.backgroundColor = "lightblue";
+        divElement.style.padding = "10px";
+
+      
+        var johnLi = document.querySelector("li:first-child");
+        johnLi.style.display = "none";
+
+        
+        var peteLi = document.querySelector("li:nth-child(2)");
+        peteLi.style.border = "1px solid black";
+
+
+// EXERCISE 3 OHHH IT WAS BECAUSE I WAS MIXING THE JAVASCRIPT AND HTML
+
+</script>
+
+<script>
+    var navBarDiv = document.getElementById("navBar");
+        navBarDiv.setAttribute("id", "socialNetworkNavigation");
+</script>
+<script>
+
+var newLi = document.createElement("li");
+
+  var newText = document.createTextNode("Logout");
+
+
+newLi.appendChild(newText);
+
+
+var ulElement = document.querySelector("ul");
+ulElement.appendChild(newLi);
+
+content
+var firstLi = ulElement.firstElementChild;
+var lastLi = ulElement.lastElementChild;
+
+console.log("Text of the first link:", firstLi.textContent);
+console.log("Text of the last link:", lastLi.textContent);
+</script>
+
+</body>
+</html>

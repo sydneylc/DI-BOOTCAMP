@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Challenge: Mad Libs</title>
+ </head>
+ <body>
+
+    <h1>Mad Libs</h1>
+
+    <form id="libform">
+        <label for="noun">Noun:</label><input type="text" id="noun"><br>
+        <label for="adjective">Adjective:</label><input type="text" id="adjective"><br>
+        <label for="person">Someone's Name:</label><input type="text" id="person"><br>
+        <label for="verb">Verb:</label><input type="text" id="verb"><br>
+        <label for="place">A place:</label><input type="text" id="place"><br>
+        <button id="lib-button">Lib it!</button>
+    </form>
+
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+
+    <script src="..."></script>
+
+ </body>
+</html>
+
+<script>
+    var form = document.getElementById("libform");
+    var narrativeSpan = document.getElementById("narrative");
+
+    form.addEventListener("submit", function(event), {
+event.preventDefault();
+    } 
+
+    var noun = document.getElementById("noun").value;
+    var adjective = document.getElementById("adjective").value;
+    var person = document.getElementById("person").value;
+    var verb = document.getElementById("verb").value;
+    var place = document.getElementById("place").value;
+
+    if ( noun !== "" && person !== "" && verb !== ""  && place !== "" ) {
+       var narrative = '${person} went to the ${pplace}. They found a ${adjective} ${noun} and decided to ${verb} it.`;
+
+       narrativeSpan.textContent = story;
+    }
+    else {
+        console.error("All fields must be filled!!!!")
+    }
+    }
+

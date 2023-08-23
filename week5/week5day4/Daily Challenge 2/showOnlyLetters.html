@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOW ONLY LETTERS</title>
+</head>
+<body>
+    <input type="text" id="lettersInput">
+    <script>
+        var lettersInput = document.getElementById("lettersInput");
+
+        lettersInput.addEventListener("input", function(event)) {
+            var inputValue = event.target.value;
+            var lettersOnly = inputValue.replace(/[^a-zA-Z]/g, ');
+            event.target.value = lettersOnly;
+        }
+    </script>
+</body>
+</html>
