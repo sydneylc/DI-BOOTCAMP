@@ -1,6 +1,7 @@
+/* this was just an example*/
 .weather-card {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
+    background-color: #f5f5f4;
+    border: 1px solid #ccb;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
@@ -29,7 +30,7 @@
   
   .humidity {
     font-size: 14px;
-    color: #888;
+    color: #882;
     margin-top: 5px;
   }
   
