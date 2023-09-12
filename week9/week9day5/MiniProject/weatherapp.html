@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weatherapp.css">
+</head>
+<body>
+    <h1>WeatherApp</h1>
+    <form id="search-form">
+        <input type="text" id="city-input" placeholder="Enter a city">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="weather-card-container"></div>
+    <div class="weather-card">
+        <div class="city-info">City Name, Country</div>
+        <div class="weather-description">Clear sky</div>
+        <div class="temperature">25°C</div>
+        <div class="humidity">Humidity: 50%</div>
+        <button class="delete-button">Delete</button>
+      </div>
+    <script src="weatherapp.js"></script>
+</body>
+</html>
