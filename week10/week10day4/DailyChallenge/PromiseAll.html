@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="sunriseForm">
+        <label for="city1Latitude">City 1 Latitude:</label>
+        <input type="text" id="city1Latitude" required>
+        <label for="city1Longitude">City 1 Longitude:</label>
+        <input type="text" id="city1Longitude" required>
+        <label for="city2Latitude">City 2 Latitude:</label>
+        <input type="text" id="city2Latitude" required>
+        <label for="city2Longitude">City 2 Longitude:</label>
+        <input type="text" id="city2Longitude" required>
+        <button type="submit">Get Sunrise Times</button>
+    </form>
+
+    <div id="sunriseTimes">
+         <script src = "PromiseAll.js"></script>
+    <p>City 1 Sunrise Time: <span id="city1Sunrise"></span></p>
+    <p>City 2 Sunrise Time: <span id="city2Sunrise"></span></p>
+</div>
+
+<script>
+    const form = document.getElementById('sunriseForm');
+    const city1LatitudeInput = document.getElementById('city1Latitude');
+    const city1LongitudeInput = document.getElementById('city1Longitude');
+    const city2LatitudeInput = document.getElementById('city2Latitude');
+    const city2LongitudeInput = document.getElementById('city2Longitude');
+    const city1SunriseSpan = document.getElementById('city1Sunrise');
+    const city2SunriseSpan = document.getElementById('city2Sunrise');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const latitude1 = city1LatitudeInput.value;
+        const longitude1 = city1LongitudeInput.value;
+        const latitude2 = city2LatitudeInput.value;
+        const longitude2 = city2LongitudeInput.value;
+
+        try {
+            const response1 = await fetch(`https://api.sunrise-sunset.org/json?lat=${latitude1}&lng=${longitude1}`);
+            const data1 = await response1.json();
+            const sunrise1 = data1.results.sunrise;
+            city1SunriseSpan.textContent = sunrise1;
+
+            const response2 = await fetch(`https://api.sunrise-sunset.org/json?lat=${latitude2}&lng=${longitude2}`);
+            const data2 = await response2.json();
+            const sunrise2 = data2.results.sunrise;
+            city2SunriseSpan.textContent = sunrise2;
+        } catch (error) {
+            console.error(error);
+        }
+    });
+</script>
+</body>
+</html>

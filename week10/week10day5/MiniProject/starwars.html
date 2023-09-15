@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="starwars.css">
+    <title>Star Wars Characters</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Star Wars Characters</h1>
+        <button id="fetchCharacter">Fetch Character</button>
+        <div id="characterInfo" class="hidden">
+            <h2>Name: <span id="characterName"></span></h2>
+            <p>Height: <span id="characterHeight"></span> cm</p>
+            <p>Gender: <span id="characterGender"></span></p>
+            <p>Birth Year: <span id="characterBirthYear"></span></p>
+            <p>Home World: <span id="characterHomeWorld"></span></p>
+        </div>
+        <div id="loading" class="hidden">
+            <i class="fas fa-spinner fa-spin"></i> Loading...
+        </div>
+        <div id="error" class="hidden">
+            <i class="fas fa-exclamation-circle"></i> Error fetching data. Please try again.
+        </div>
+    </div>
+    <script src="starwars.js"></script>
+</body>
+</html>

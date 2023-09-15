@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ffac33;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #loading,
+  #error {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  #error {
+    color: #ff3d00;
+  }
+  
+  #characterInfo {
+    margin-top: 20px;
+  }
+  
+  #characterInfo h2 {
+    font-size: 20px;
+  }
+  
+  #characterInfo p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  /* Font Awesome Icons */
+  .fa-spinner,
+  .fa-exclamation-circle {
+    margin-right: 5px;
+  }
+  
