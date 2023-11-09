@@ -1,0 +1,43 @@
+.carousel-container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* EVERY SLIDE*/
+  .slick-slide {
+    padding: 0 10px;
+  }
+  
+  /* IMAGES */
+  .slick-slide img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .slick-slide div {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* HEADINGS IF I WANTED */
+  .slick-slide h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  /* WRITING IN SLIDES IF NEEDED */
+  .slick-slide p {
+    color: #555;
+  }
+  
+  
+  /* ACTIVE SLIDE */
+  .slick-slide.slick-active {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+  }
