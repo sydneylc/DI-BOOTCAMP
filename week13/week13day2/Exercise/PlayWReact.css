@@ -1,0 +1,17 @@
+/* PART THREE PLAYING AROUND WITH REACT */
+/* Ohhh I guess I have to do the specifics DS wants
+.para {
+    background-color: #3266cd;
+    color: white;
+    padding: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+  } */
+
+  .para {
+    background-color: #282c34;
+    color: white;
+    padding: 40px;
+    font-family: Arial;
+    text-align: center;
+  }
